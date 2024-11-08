@@ -78,13 +78,13 @@ const MyLoattery = () => {
       {numbers2.map((number, index) => (
         <div
           key={index}
-          className={`m-2 border-2 border-green-600 w-[70px] rounded-md p-2 text-center`}
+          className={`m-2 border-2 border-green-600 w-[80px] rounded-md p-2 text-center`}
         >
           {number}
         </div>
       ))}
               <div
-          className={`m-2 border-2 blinking border-green-600 w-[70px] rounded-md p-2 text-center`}
+          className={`m-2 border-2 blinking border-green-600 w-[80px] rounded-md p-2 text-center`}
         >
           402579
         </div>
