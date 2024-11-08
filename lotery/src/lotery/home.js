@@ -21,7 +21,7 @@ const Home = () => {
     try {
       console.log('mobile===>',mobile);
       
-      const res = await axios.get(`http://localhost:8085/api/v1/user/validate/${mobile}`)
+      const res = await axios.get(`https://ltfront.rscjewells.shop/api/v1/user/validate/${mobile}`)
       // console.log(res); 
        
       if(res.status == 201){
