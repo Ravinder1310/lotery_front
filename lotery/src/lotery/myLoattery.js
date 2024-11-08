@@ -4,7 +4,7 @@ const MyLoattery = () => {
 
   const [user, setUser] = useState();
 
-    const numbers2 = Array.from({ length: 10 }, () =>
+    const numbers2 = Array.from({ length: 9 }, () =>
         Math.floor(100000 + Math.random() * 900000)
       );
 
@@ -40,7 +40,7 @@ const MyLoattery = () => {
   return (
     <div className="pt-28 p-4">
       <div className="border-2 border-black pb-2">
-        <img className="w-full h-[300px]" src={`https://ltback.rscjewells.shop/${user?.photo}`} alt="error" />
+        <img className="w-full h-[300px]" src={`http://localhost:8085/${user?.photo}`} alt="error" />
         <h1 className="text-3xl mt-4 font-bold">Congratulations</h1>
         <p className="font-bold">{user?.name}</p>
         <p className="font-bold">2nd Prize</p>
@@ -78,14 +78,16 @@ const MyLoattery = () => {
       {numbers2.map((number, index) => (
         <div
           key={index}
-          className={`m-2 border-2 border-green-600 w-[70px] rounded-md p-2 text-center ${
-            index === 9 ? "blinking" : ""
-          }`}
+          className={`m-2 border-2 border-green-600 w-[70px] rounded-md p-2 text-center`}
         >
           {number}
         </div>
       ))}
-
+              <div
+          className={`m-2 border-2 blinking border-green-600 w-[70px] rounded-md p-2 text-center`}
+        >
+          402579
+        </div>
       {/* Blinking Animation CSS */}
       <style jsx>{`
         .blinking {

@@ -21,7 +21,7 @@ const Home = () => {
     try {
       console.log('mobile===>',mobile);
       
-      const res = await axios.get(`https://ltback.rscjewells.shop/api/v1/user/validate/${mobile}`)
+      const res = await axios.get(`http://localhost:8085/api/v1/user/validate/${mobile}`)
       // console.log(res); 
        
       if(res.status == 201){
@@ -141,7 +141,7 @@ const Home = () => {
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white w-[90%] max-w-xs p-6 rounded-lg shadow-lg text-center relative">
-            <h2 className="text-lg font-bold mb-4">GANDHI BROTHERS LOTTERY</h2>
+            <h2 className="text-lg font-bold mb-4">SINGH LOTTERY</h2>
             <button
               className="absolute top-2 right-2 text-black font-bold text-xl"
               onClick={closeModal}
@@ -164,7 +164,7 @@ const Home = () => {
               Contact for more information
             </p>
             <a href="tel:+918797527031" className="text-blue-600 font-semibold">
-              +91 8797527031
+              +91 9266878747
             </a>
           </div>
         </div>
